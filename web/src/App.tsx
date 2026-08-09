@@ -118,7 +118,7 @@ export default function App() {
 
   return (
     <Shell>
-      <div ref={containerRef} className="w-full h-full min-h-[400px]" />
+      <div ref={containerRef} className="w-full h-full" />
     </Shell>
   );
 }
