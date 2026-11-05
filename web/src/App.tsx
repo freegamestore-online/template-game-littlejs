@@ -1,6 +1,6 @@
+import { GameShell, GameTopbar } from "@freegamestore/games";
 import { useEffect, useRef } from "react";
 import * as LJS from "littlejsengine";
-import { Shell } from "./components/Shell";
 
 // A complete, playable reference game on LittleJS. It shows every pattern you
 // need: engineInit into a container, an EngineObject with physics, keyboard +
@@ -117,8 +117,8 @@ export default function App() {
   }, []);
 
   return (
-    <Shell>
+    <GameShell topbar={<GameTopbar title="APPNAME" showScore={false} />}>
       <div ref={containerRef} className="w-full h-full" />
-    </Shell>
+    </GameShell>
   );
 }
